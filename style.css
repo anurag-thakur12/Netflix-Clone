@@ -1,0 +1,612 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* header css start */
+
+header {
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+.navbar {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    z-index: 15;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.nav-text {
+    display: flex;
+    gap: 1rem;
+}
+
+.language {
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 30px;
+    gap: 0.2rem;
+    padding: 0 0.6rem;
+    background-color: #12111179;
+    border-radius: 5px;
+}
+
+.icon svg {
+    color: white;
+}
+
+#select {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    appearance: none;
+}
+
+#select option {
+    background-color: white;
+    color: black;
+}
+
+.dropdown {
+    padding-top: 0.2rem;
+}
+
+#login button {
+    background-color: #E50914;
+    border: none;
+    color: white;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.9rem;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#login button:hover {
+    background-color: #99161D;
+}
+
+/* header css end */
+
+/* home css start */
+
+#home {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#home img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.home-bg {
+    background-color: rgba(0, 0, 0, 0.588);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+
+.home-text {
+    position: absolute;
+    top: 0;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 10;
+    text-align: center;
+}
+
+.home-text h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 1rem 0;
+}
+
+.home-text p {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.ready {
+    padding: 1.5rem 0;
+}
+
+.gmail {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.gmail-box input {
+    width: 350px;
+    height: 50px;
+    background: rgba(22, 22, 22, 0.7);
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1.1rem;
+    padding-left: 0.9rem;
+}
+
+.gmail-box input::placeholder {
+    color: #938e8e;
+}
+
+.gmail-btn button {
+    background-color: #E50914;
+    width: 220px;
+    height: 50px;
+    border-radius: 0.25rem;
+    font-size: 1.5rem;
+    border: none;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gmail-btn button:hover {
+    background-color: #99161D;
+}
+
+.gmail-btn svg {
+    padding-top: 0.2rem;
+}
+
+/* home css start */
+
+#hr {
+    height: 0.5rem;
+    background-color: #232323;
+    border: none;
+    width: 100%;
+}
+
+/* feature css start */
+
+#feature {
+    height: 100%;
+    position: relative;
+    background-color: black;
+    color: white;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: auto;
+    width: 80%;
+    padding: 4.5rem 0;
+}
+
+.feature-text {
+    width: 50%;
+}
+
+.feature-text h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.feature-text p {
+    font-size: 1.6rem;
+    padding-top: 1.4rem;
+}
+
+.feature-media {
+    width: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-media img {
+    width: 100%;
+}
+
+.feature-video {
+    position: absolute;
+    top: 20%;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    max-width: 74%;
+    max-height: 54%;
+    left: 13%;
+    overflow: hidden;
+}
+
+.feature-video2 {
+    display: flex;
+    position: absolute;
+    border: 2px solid rgba(128, 128, 128, 0.7);
+    min-width: 15rem;
+    width: 60%;
+    bottom: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0.25rem 0.65rem;
+    background: rgb(0, 0, 0);
+    border-radius: 0.75rem;
+    box-shadow: 0 0 2em 0 rgb(0, 0, 0);
+    z-index: 1;
+}
+
+.feature2-img {
+    margin-right: 1rem;
+}
+
+.feature2-img img {
+    height: 3rem;
+}
+
+.feature2-text {
+    width: 60%;
+}
+
+.feature2-text h5 {
+    font-size: 1.1rem;
+}
+
+.feature2-text span {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #0071eb;
+}
+
+.feature2-vid img {
+    height: 3rem;
+}
+
+#feature-media3 img {
+    width: 90%;
+}
+
+#feature-video3 {
+    height: 100%;
+    width: 100%;
+    max-width: 58%;
+    height: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 35%;
+    left: 43%;
+}
+
+/* feature css end */
+
+/* faq css start */
+
+#faq {
+    position: relative;
+    background-color: black;
+    color: white;
+}
+
+.heading {
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.heading h2 {
+    font-size: 2.6rem;
+    font-weight: 900;
+}
+
+.faq {
+    width: 75%;
+    margin: auto;
+}
+
+.question {
+    display: inline-block;
+    background-color: #363636;
+    width: 100%;
+    padding: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.question-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.question-title p {
+    font-size: 1.5rem;
+}
+
+.question-title .question-icon {
+    cursor: pointer;
+}
+
+.question-text p {
+    font-size: 1.5rem;
+    padding: 1.3rem;
+}
+
+/* hide text */
+.question-text {
+    display: none;
+    border-top: 1px solid black;
+    transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+}
+
+.show-text .question-text {
+    display: block;
+}
+
+.show-text .minus-icon {
+    rotate: -45deg;
+}
+
+.gmail-last {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.gmail-last p {
+    font-size: 1.4rem;
+}
+
+/* faq css start */
+
+/* footer css start */
+
+footer {
+    background-color: black;
+    color: white;
+    padding-top: 4rem;
+}
+
+.footer {
+    width: 80%;
+    margin: auto;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.call {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.call a {
+    color: #b3b2b2;
+}
+
+.footer-text {
+    margin: 1.5rem 0;
+}
+
+.footer-text ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    list-style: none;
+    line-height: 2rem;
+}
+
+.footer-text ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.footer p {
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}
+
+.last-language {
+    width: 130px;
+}
+
+#select2 {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    appearance: none;
+}
+
+#select2 option {
+    background-color: white;
+    color: black;
+}
+
+/* footer css start */
+
+/* mobile media query */
+
+@media only screen and (max-width:600px) {
+    #home {
+        height: 100vh;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .home-text h2 {
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+
+    .gmail {
+        flex-direction: column;
+        line-height: 5rem;
+    }
+
+    .gmail-box input {
+        width: 100%;
+    }
+
+    #select {
+        display: none;
+    }
+
+    .gmail-btn button {
+        width: 150px;
+        font-size: 1rem;
+    }
+
+    .feature-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .feature-text h2 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .feature-text p {
+        font-size: 1.1rem;
+    }
+
+    .feature-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .feature-media {
+        width: 100%;
+    }
+
+    #feature2 {
+        flex-direction: column-reverse;
+    }
+
+    .feature-video2 {
+        width: 90%;
+    }
+
+    .heading h2 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .faq {
+        width: 90%;
+    }
+
+    .question-title p {
+        font-size: 1.2rem;
+    }
+
+    .question .question-icon svg {
+        height: 24px;
+        width: 24px;
+    }
+
+    .question-text p {
+        font-size: 1.3rem;
+    }
+
+    .call {
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+
+    .footer-text ul {
+        grid-template-columns: auto auto;
+    }
+}
+
+/* tab media query */
+@media only screen and (min-width:601px) and (max-width:960px) {
+    #home {
+        height: 90vh;
+    }
+
+    .home-text h2 {
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+
+    .feature-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .feature-text h2 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .feature-text p {
+        font-size: 1.1rem;
+    }
+
+    .feature-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .feature-media {
+        width: 76%;
+    }
+
+    #feature2 {
+        flex-direction: column-reverse;
+    }
+
+    .feature-video2 {
+        width: 70%;
+        bottom: 6%;
+    }
+
+    .heading h2 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .faq {
+        width: 90%;
+    }
+
+    .question-title p {
+        font-size: 1.2rem;
+    }
+
+    .footer-text ul {
+        grid-template-columns: auto auto;
+    }
+
+}
